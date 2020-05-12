@@ -25,7 +25,10 @@ d. let whiteHouseAddress: Int + String = 1600 + "Pennsylvania Ave"
 
 e. var peopleAtParty: Double = "95"
 ```
-
+Solution
+```
+d
+```
 ***
 ## 2. Boolean Evaluations 1
 
@@ -42,7 +45,10 @@ d. !!(!!true && !!false)
 
 e. true && (true && (true && (true || false)))
 ```
-
+Solution
+```
+c, e
+```
 ***
 
 ## 3. Sum
@@ -73,7 +79,10 @@ sum = 35
 Output:
 35
 ```
-
+Solution
+```
+var sum = a + b
+```
 ***
 ## 4. Seconds in Year
 
@@ -85,7 +94,12 @@ The number of seconds in a year is 365 times the number of seconds in a day.
 The number of seconds in a day is 24 times the number of seconds in a hour.
 The number of seconds in a hour is 60 times the number of seconds in a minute, which is 60.
 ```
-
+Solution
+```
+var secondsInAHour = 60 * 60 //3600 seconds
+var secondsInADay = secondsInAHour * 24 //86400 seconds
+var secondsInAYear = secondsInADay * 365 //31536000
+```
 ***
 ## 5. Number of Pixels
 
@@ -119,7 +133,10 @@ Consider a 5x3 screen like this:
 
 The number of pixels on this screen is 5+5+5 = 5*3
 ```
-
+Solution
+```
+var numberOfPixels = width * height
+```
 ***
 ## 6. Sum and Difference
 
@@ -151,7 +168,11 @@ Hint:
 sum + diff = a + a + b - b
 sum + diff = 2 * a
 ```
-
+Solution
+```
+var a = (sum + diff) / 2
+var b = sum - a
+```
 ***
 ## 7. Swap Values
 
@@ -175,7 +196,14 @@ var b = 2
 a = b // a will have the value 2. The original value of a is lost
 b = a // b will remain the same
 ```
+Solution
+```
+var c: Int
 
+c = a
+a = b
+b = c
+```
 ***
 ## 8. Find last number
 
@@ -201,23 +229,27 @@ Output:
 Hint:
 Use the remainder % operator.
 ```
-
+Solution
+```
+var lastDigit = a % 10
+```
 ***
 ## 9. Dog Years
 
 You are given Rocky’s age in dog years. Print Rocky’s age in human years. You know that 1 human year is 7 dog years.
 
 ```swift
-
-Example 1
+Example
 Input: 
 var rockysAgeInDogYears = 50
 
 Output:
 7
-
 ```
-
+Solution
+```
+var rockysAgeInHumanYears = rockyAgeInDogYears / 7
+```
 ***
 ## 10. Alice's Age
 
@@ -251,9 +283,11 @@ alice = 38
 Hint:
 alice + x = y * (bob + x)
 Solve for alice
-
 ```
-
+Solution
+```
+var aliceAge = (bob * y) + x
+```
 ***
 ## 11. Trading Oranges for Apples
 
@@ -280,9 +314,12 @@ oranges = 15
 
 Hint:
 Use the division(/) and the remainder(%) operator
-
 ```
-
+Solution
+```
+var apples = x % 5
+var oranges = x / 5 * 3
+```
 ***
 ## 12. Boy and Girl Percentages
 
@@ -302,9 +339,13 @@ var numberOfGirls = 60
 Output:
 25 // percentage of boys
 75 // percentage of girls
-
 ```
-
+Solution
+```
+var numberOfStudents = numberOfBoys + numberOfGirls
+var boyPercentage = numberOfBoys * 100 / numberOfStudents
+var girlPercentage = numberOfGirls * 100 / numberOfStudents
+```
 ***
 ## 13. Boolean Evaluations 2
 
@@ -316,9 +357,11 @@ b. false && true
 c. !false
 d. !!!true
 e. !(true && true)
-
 ```
-
+Solution
+```
+a, d
+```
 ***
 ## 14. Boolean Evaluations 3
 
@@ -330,6 +373,8 @@ b. 9 == 2
 c. "Hello!" == "Hello!"
 d. 19.0 >= 19.0
 e. 9 > 7 && 7 < 10
-
 ```
-
+Solution
+```
+a, c, d, e
+```
